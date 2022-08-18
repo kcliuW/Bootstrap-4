@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Bootstrap!</title>
+  </head>
+  <body>
+    <h1 class="display-3 text-center my-4">Form</h1>
+    <div class="container">
+      <!-- Form -->
+    <form>
+      <!-- text field group -->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name", placeholder="Enter Name">
+      </div>
+
+      <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" class="form-control form-control-sm" id="company", placeholder="Enter Company Name">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password", placeholder="password" readonly>
+      </div>
+
+      <!-- select -->
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select class="form-control" id="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+      </div>
+
+      <!-- Text area -->
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="3" class="form-control"></textarea>
+      </div>
+      <!--file input -->
+      <div class="form-group">
+        <label for="file">File Upload</label>
+        <input class="form-control-file" id="file" type="file">
+        <small class="form-text text-muted" id="fileHelp">Max 3mb size</small>
+      </div>
+
+      <!-- custom file input -->
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="'myfile">
+        <label for="myfile" class="custom-file-label">Choose file</label>
+      </div>
+      <hr>
+      <!-- range -->
+      <div class="form-group">
+        <label for="membership">membership level</label>
+      <input type="range" class="custom-range" min="1", max="10", step="1">
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Submit</button>
+    </form>
+    <!-- inline form -->
+    <form class="form-inline">
+      <input type="text" class="form-control mr-2" id="username" placeholder="enter username">
+      <input type="text" class="form-control mr-2" id="password" placeholder="password">
+      <div class="form-check">
+        <label class="form-check-label mr-2">
+          <input type="checkbox" class="form-check input">Remember me</label>
+      </div>
+      <button class="btn btn-light" type="submit">submit</button>
+    </form>
+    <hr>
+    <!-- form row -->
+    <form>
+      <div class="form-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First username">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="last name">
+        </div>
+      </div>
+    </form>
+    <hr>
+    <!-- validation -->
+    <div class="form-group">
+      <label for="username">Username</label>
+        <input type="text" class="form-control is-valid" id="username">
+      </div>
+      <div class="form-group">
+        <label for="password">password</label>
+          <input type="text" class="form-control is-valid" id="password">
+          <div class="invalid-feedback">
+            Password Not Strong enough
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password2">Confirm password</label>
+            <input type="text" class="form-control is-valid" id="password2">
+            <div class="invalid-feedback">
+              Password does not match
+            </div>
+          </div>
+    </div>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
